@@ -1,0 +1,40 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><help_text></help_text><element><id>UMLClass</id><coordinates><x>170</x><y>0</y><w>300</w><h>80</h></coordinates><panel_attributes>Bolao
+--
+- nome: string
+--
++ criarBolao(nome:string, primeiraAposta: Aposta)
++ obterResultado()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>210</x><y>250</y><w>210</w><h>80</h></coordinates><panel_attributes>Aposta
+--
+- pontuacao: integer | null
+--
++ calcularPontuacao(jogos:Jogos[])</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>280</x><y>440</y><w>100</w><h>60</h></coordinates><panel_attributes>Apostador
+--
+- nome: string
+- cpf: string</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>530</x><y>40</y><w>140</w><h>110</h></coordinates><panel_attributes>Jogo
+--
+- placarTime1: number
+- placarTime2: number
+- time1: Selecao
+- time2: Selecao
+- fase: number</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>530</x><y>250</y><w>190</w><h>90</h></coordinates><panel_attributes>Palpite
+--
+- palpitePlacarTime1: number
+- palpitePlacarTime2: number
+- palpiteTime1: Selecao
+- palpiteTime2: Selecao</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>860</x><y>60</y><w>100</w><h>60</h></coordinates><panel_attributes>Selecao
+--
+- nome: string</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>710</x><y>110</y><w>230</w><h>210</h></coordinates><panel_attributes>lt=-&gt;
+participa
+m2=2</panel_attributes><additional_attributes>10;190;200;190;200;10</additional_attributes></element><element><id>Relation</id><coordinates><x>610</x><y>140</y><w>40</w><h>130</h></coordinates><panel_attributes>lt=-&gt;
+m2=  1
+</panel_attributes><additional_attributes>10;110;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>410</x><y>270</y><w>140</w><h>50</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-&gt;
+possui
+m2=*</panel_attributes><additional_attributes>10;20;120;20</additional_attributes></element><element><id>Relation</id><coordinates><x>310</x><y>320</y><w>70</w><h>140</h></coordinates><panel_attributes>lt=-
+realiza
+m1=*
+m2=1
+</panel_attributes><additional_attributes>10;10;10;120</additional_attributes></element><element><id>Relation</id><coordinates><x>310</x><y>70</y><w>70</w><h>200</h></coordinates><panel_attributes>r1=1
+possui
+r2=1..*</panel_attributes><additional_attributes>10;10;10;180</additional_attributes></element><element><id>Relation</id><coordinates><x>660</x><y>70</y><w>220</w><h>50</h></coordinates><panel_attributes>lt=-&gt;
+participa
+m2=2</panel_attributes><additional_attributes>10;20;200;20</additional_attributes></element></diagram>
